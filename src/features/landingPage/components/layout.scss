@@ -1,0 +1,55 @@
+.landing {
+  &__container {
+    background: url(../../../assets/images/home-bg.jpg) no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    @apply w-screen h-screen;
+  }
+
+  &__content {
+    @apply pt-10
+      px-16
+      w-full lg:w-8/12 xl:w-6/12
+      text-center md:text-left
+      flex
+      flex-col
+      items-center md:items-start;
+
+    &--title {
+      h1 {
+        @apply text-5xl
+          uppercase
+          leading-10;
+      }
+
+      @apply pb-8;
+    }
+
+    &--description {
+      p {
+        @apply pb-4
+          leading-tight;
+      }
+
+      @apply pb-32 sm:pb-4;
+    }
+
+    &--button {
+      @apply bg-green-700 hover:bg-green-900
+        text-white
+        text-center
+        text-lg
+        uppercase
+        tracking-wider
+        py-3
+        px-4
+        rounded
+        w-56
+        cursor-pointer;
+    }
+  }
+}
