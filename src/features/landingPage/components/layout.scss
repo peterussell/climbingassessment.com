@@ -39,8 +39,7 @@
         max-w-xl
         p-6 pb-2
         mb-8
-        bg-slate-200/70
-        rounded-xl;
+        bg-slate-200/70;
     }
 
     &--button {
@@ -51,6 +50,11 @@
         px-6
         rounded
         cursor-pointer;
+
+      a {
+        @apply no-underline
+          text-slate-900;
+      }
     }
   }
 }

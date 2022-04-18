@@ -1,0 +1,12 @@
+.mainLayout {
+  &__container {
+    @apply w-full
+      flex
+      justify-center;
+
+    &--content {
+      @apply mt-10
+        w-full lg:w-10/12 2xl:w-9/12;
+    }
+  }
+}

@@ -1,9 +1,9 @@
-import { Layout } from "../components/Layout";
+import { MainLayout } from "@/components/Layout";
 
 export const Assessment = () => {
   return (
-    <Layout>
+    <MainLayout>
       <div>Assessment component</div>
-    </Layout>
+    </MainLayout>
   )
 }

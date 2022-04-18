@@ -2,7 +2,7 @@ import { Layout } from "../components/Layout";
 
 export const LandingPage = () => {
   return (
-    <Layout title="Improve your climbing" buttonText="Start assessment">
+    <Layout title="Improve your climbing" startText="Start assessment">
       <p>
         This website will guide you through a self-assessment of your current
         climbing abilities to help identify strengths and areas for

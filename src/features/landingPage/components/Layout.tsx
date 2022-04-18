@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./layout.scss";
 
 type LayoutProps = {
   children: React.ReactNode,
   title: string,
-  buttonText: string
+  startText: string
 };
 
-export const Layout = ({ children, title, buttonText }: LayoutProps) => {
+export const Layout = ({ children, title, startText }: LayoutProps) => {
   return (
     <div className="landing__container">
       <div className="landing__content">
@@ -20,10 +21,10 @@ export const Layout = ({ children, title, buttonText }: LayoutProps) => {
           {children}
         </div>
         <div className="landing__content--button">
-          {/* TODO: create a button component */}
-          {buttonText}
+          <Link to="/assessment">
+            {startText}
+          </Link>
         </div>
-
       </div>
     </div>
   )
