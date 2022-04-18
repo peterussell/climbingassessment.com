@@ -6,3 +6,10 @@ body {
   margin: 0;
   @apply text-slate-900;
 }
+
+@layer base {
+  a {
+    @apply text-sky-600
+      underline;
+  }
+}
